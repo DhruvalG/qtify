@@ -47,6 +47,7 @@ export default function SearchFunct({ className, data }) {
             <TextField
               {...params}
               label="search"
+              placeholder='search'
               InputProps={{
                 ...params.InputProps,
                 type: 'search',
