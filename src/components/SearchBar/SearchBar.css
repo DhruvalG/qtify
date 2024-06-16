@@ -46,6 +46,7 @@ form {
     border: none;
     border-left: 2px solid var(--gray-color);
     padding: 0 1rem;
+    cursor: pointer;
   
     border-radius: 0 8px 8px 0;
   }

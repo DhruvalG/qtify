@@ -46,7 +46,7 @@ export default function SearchFunct({ className, data }) {
           renderInput={(params) => (
             <TextField
               {...params}
-              label="Search an album of your choice"
+              label="search"
               InputProps={{
                 ...params.InputProps,
                 type: 'search',

@@ -26,7 +26,7 @@ const SearchBar = ({ className, data }) => {
       <div className={className}>
         <input
           type="search"
-          placeholder="Search an album of your choice"
+          placeholder="search"
           required
           value={values}
           onChange={handleChange}
