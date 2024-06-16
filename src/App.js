@@ -1,6 +1,6 @@
 import React, { useEffect, useState} from 'react'
-import { NavBar } from './components';
-import { fetchTopAlbums} from './api/api';
+import { HeroSection, NavBar } from './components';
+import { fetchTopAlbums } from './api/api';
 const App = () => {
   const [dataTopAlbums, setDataTopAlbums] = useState([]);
 
@@ -20,6 +20,7 @@ const App = () => {
   return (
     <div>
       <NavBar data={dataTopAlbums} />
+      <HeroSection />
     </div>
   )
 }

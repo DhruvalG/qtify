@@ -1,4 +1,5 @@
 export { default as NavBar } from './NavBar/NavBar.jsx';
+export { default as HeroSection } from './HeroSection/HeroSection.jsx';
 export { default as SearchBar } from './SearchBar/SearchBar.jsx';
 export { default as SearchFunct } from './SearchBar/SearchFunct.jsx';
 
