@@ -1,9 +1,10 @@
-import React from 'react'
-import styles from "./Button.module.css"
-export const Button = ({children}) => {
-  return (
-    <div className={styles.btn} >
-      {children}
-    </div>
-  )
-}
+import React from 'react';
+import './Button.css';
+
+const Buttons = ({ text, handleOpen }) => (
+  <button className="btn" onClick={handleOpen}>
+    {text}
+  </button>
+);
+
+export default Buttons;

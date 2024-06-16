@@ -1,13 +1,30 @@
-import React from "react";
-import "./App.css";
-import NavBar from "./components/NavBar/NavBar";
+import React, { useEffect, useState} from 'react'
+import { NavBar } from './components';
+import { fetchTopAlbums} from './api/api';
+const App = () => {
+  const [dataTopAlbums, setDataTopAlbums] = useState([]);
 
-function App() {
+  const getDataTopAlbums = async () => {
+    try {
+      const res = await fetchTopAlbums();
+      setDataTopAlbums(res);
+    } catch (error) {
+      console.error(error)
+    }
+  }
+
+  useEffect(() => {
+    getDataTopAlbums();
+  }, [])
+
   return (
-    <div className="App">
-      <NavBar />
+    <div>
+      <NavBar data={dataTopAlbums} />
     </div>
-  );
+  )
 }
 
 export default App;
+
+
+
